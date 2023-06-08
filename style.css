@@ -1,0 +1,248 @@
+/* Universal Selector (Has the lowest priority)*/
+* {
+  /* border-top: 6px solid #3500b0; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #3f3f3f;
+  border-top: 8px solid #3500b0;
+  position: relative;
+}
+
+.container {
+  width: 750px;
+  margin: 0px auto;
+  /* position: relative; */
+}
+
+.emote {
+  display: inline;
+  font-style: normal;
+  font-size: 20px;
+}
+
+h1.banner::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  color: #000000;
+  font-size: 15px;
+  background-color: rgb(255, 217, 0);
+  padding: 5px 10px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+/*Adj acent element selector Paragraph that comes after h3*/
+/* h3 + p::first-letter {
+  font-size: 50px;
+  margin-right: 5px;
+} */
+
+.main-header {
+  background-color: #f1f1f1;
+  /* text-align: center; */
+  width: 700px;
+  height: fit-content;
+  /* border-radius: 2px;
+  border: 4px dotted #3500b0;
+  border-width: 4px 0px 4px 0px; */
+  padding: 15px;
+  /* padding-bottom: 14px;
+  padding-right: 14px;
+  padding-left: 14px;*/
+
+  margin-bottom: 50px;
+}
+
+.post-img {
+  max-width: 100%;
+  height: fit-content;
+}
+
+.auth {
+  border: 1px solid #000000;
+}
+
+article {
+  margin-bottom: 25px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #3500b0;
+  font-family: "Open Sans Bold", sans-serif;
+}
+
+h1 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+}
+
+li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* li:last-child {
+  margin-bottom: 6px;
+} */
+
+.post-header {
+  margin-bottom: 20px;
+  /* position: relative; */
+}
+
+#related-post-author ul {
+  list-style: none;
+  padding: 0px;
+  margin-left: 0;
+}
+
+#related-post-author {
+  background-color: #f1f1f1;
+  width: fit-content;
+  height: fit-content;
+  border: 0px;
+  border-top: 4px #3500b0;
+  border-bottom: 4px #3500b0;
+  border-style: solid;
+  padding: 0px 30px;
+}
+
+#copyright {
+  font-size: 12px;
+  text-align: center;
+  margin: 10px;
+}
+
+.test {
+  margin: 20px;
+}
+
+aside h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.related-author {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* li:nth-child(even) {
+  color: #3500b0;
+} */
+
+/* Misconception: this won't work! */
+article p:first-child {
+  color: #3500b0;
+}
+
+/* Styling Links */
+/* a:link - this only targets "a" tag 
+having href attribute with hyperlinks. */
+a:link {
+  color: #3500b0;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #3500b0;
+}
+
+a:hover {
+  color: rgba(76, 0, 255, 0.8);
+  font-weight: bold;
+  text-decoration: underline wavy;
+}
+
+a:active {
+  font-style: italic;
+}
+
+#author {
+  font-style: italic;
+}
+
+nav a:link {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.rp-auth li {
+  font-weight: unset;
+  font-style: unset;
+}
+
+/* nav a:link {
+  background-color: cadetblue;
+  padding: 10px;
+  display: block;
+  margin: 5px 0;
+  width: 100px;
+  text-align: center;
+} */
+
+.like {
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  position: absolute;
+}

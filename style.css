@@ -157,9 +157,9 @@ li {
   margin: 20px;
 }
 
-.test {
+/* .test {
   margin: 20px;
-}
+} */
 
 aside h4 {
   text-align: center;
@@ -171,13 +171,13 @@ aside h4 {
   font-weight: bold;
 }
 
-li:first-child {
+/* li:first-child {
   font-weight: bold;
-}
+} */
 
-li:last-child {
+/* li:last-child {
   font-style: italic;
-}
+} */
 
 /* li:nth-child(even) {
   color: #3500b0;
@@ -334,4 +334,26 @@ footer {
   font-weight: bold;
   display: block;
   margin-bottom: 5px;
+}
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+}
+#related-post-author {
+  /*DEFAULTS
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+  flex: 0 0 300px;
+}
+article {
+  flex: 0 0 825px;
+  margin-bottom: 0;
+}
+.related {
+  margin-left: 0;
+}
+.related-post:last-child {
+  margin-bottom: 0;
 }

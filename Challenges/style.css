@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -47,7 +47,8 @@ h2::before {
 }
 
 .price {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .shipping-cost {
@@ -62,7 +63,7 @@ h3 {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 15px;
-  margin-top: 25px;
+  /* margin-top: 25px; */
 }
 
 button {
@@ -118,8 +119,8 @@ ul li {
 }
 
 .c-black {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   background-color: black;
   display: inline-block;
   margin-right: 10px;
@@ -144,7 +145,7 @@ ul li {
 .c-black {
   border: 1px solid black;
 }
-.shoe {
+/* .shoe {
   float: left;
 }
 
@@ -169,4 +170,30 @@ ul li {
 }
 .add-cart {
   clear: both;
+} */
+
+/*FLEXBOX*/
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.shipping-details {
+  flex: 0 1 330px;
+  margin-top: 20px;
+}
+.price-ship {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.price-ship p {
+  margin-bottom: 0;
+}
+.shipping-cost {
+  padding-bottom: 0;
+}
+.product-details {
+  margin-top: 20px;
 }
